@@ -1,0 +1,15 @@
+<a class="list-group-item list-group-item-action" style="cursor:pointer" [routerLink]="[index]" routerLinkActive="active">
+
+    <div class="col-sm-12">
+        <h4 class="list-group-item-heading text-left">
+            {{recipe.name}}
+        </h4>
+        <p class="list-group-item-text text-left">
+            {{recipe.description}}
+        </p>
+    </div>
+
+    <div class="col-sm-12 text-right">
+        <img [src]="recipe.imagePath" [alt]="recipe.name" class="image-responsive recipe-image">
+    </div>
+</a>
